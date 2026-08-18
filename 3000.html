@@ -86,7 +86,7 @@
     <main class="container mx-auto px-6 py-8" id="contenidoReporte">
         <div class="text-center mb-8 pb-4 border-b-2 border-imcu/20">
             <h2 class="text-[20px] font-bold texto-oficial text-imcu">CONCENTRADO DE GASTO - CAPÍTULO 3000 - AVANCE PRESUPUESTAL</h2>
-            <p class="text-[15px] text-gray-600">Del 1 de Enero al 31 de Marzo de 2026</p>
+            <p class="text-[15px] text-gray-600">Del 1 de Enero al 30 de Junio de 2026</p>
         </div>
 
         <div class="bg-white rounded-lg shadow-sm p-5 mb-6 border-l-4 border-imcu">
@@ -161,91 +161,154 @@
 
     <script>
         // ===================== DATOS COMPLETOS - CAPÍTULO 3000 =====================
-        const proyectosGasto = [
+                const proyectosGasto = [
+            {
+                clave: "0105020209",
+                nombre: "Registro Y Control De Caja Y Tesorería",
+                dependencia: "B00",
+                area: "402",
+                presupuestoAnual: 125000.0,
+                ampliacion: 0.0,
+                reduccion: 0.0,
+                presupuestoModificado: 125000.0,
+                pagadoAcumulado: 37300.0,
+                porEjercer: 87700.0,
+                variacionPorcentaje: 70.16,
+                partidas: [
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "SERVICIOS PROFESIONALES, CIENTIFICOS, TECNICOS Y OTROS SERVICIOS", partida: "3300", montoAnual: 125000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 125000.0, pagado: 37300.0, porEjercer: 87700.0, avance: 70.16},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicios de consultoría administrativa, procesos, técnica y en tecnologías de la información", partida: "3330", montoAnual: 100000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 100000.0, pagado: 37300.0, porEjercer: 62700.0, avance: 62.7},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicios informáticos", partida: "3331", montoAnual: 100000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 100000.0, pagado: 37300.0, porEjercer: 62700.0, avance: 62.7}
+                ]
+            },
             {
                 clave: "0105020601",
-                nombre: "Administración de Personal",
+                nombre: "Administración De Personal",
                 dependencia: "B00",
                 area: "402",
                 presupuestoAnual: 618414.41,
-                ampliacion: 0.00,
-                reduccion: 0.00,
+                ampliacion: 0.0,
+                reduccion: 0.0,
                 presupuestoModificado: 618414.41,
-                pagadoAcumulado: 78638.00,
-                porEjercer: 539776.41,
-                variacionPorcentaje: 87.28,
+                pagadoAcumulado: 216093.0,
+                porEjercer: 402321.41,
+                variacionPorcentaje: 65.06,
                 partidas: [
-                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Impuesto sobre erogaciones por remuneraciones al trabajo personal", partida: "3982", montoAnual: 618414.41, ampliacion: 0.00, reduccion: 0.00, modificado: 618414.41, pagado: 78638.00, porEjercer: 539776.41, avance: 12.72}
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "OTROS SERVICIOS GENERALES", partida: "3900", montoAnual: 618414.41, ampliacion: 0.0, reduccion: 0.0, modificado: 618414.41, pagado: 216093.0, porEjercer: 402321.41, avance: 65.06},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Impuesto sobre nómina y otros que se derivan de una relación laboral", partida: "3980", montoAnual: 618414.41, ampliacion: 0.0, reduccion: 0.0, modificado: 618414.41, pagado: 216093.0, porEjercer: 402321.41, avance: 65.06},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Impuesto sobre erogaciones por remuneraciones al trabajo personal.", partida: "3982", montoAnual: 618414.41, ampliacion: 0.0, reduccion: 0.0, modificado: 618414.41, pagado: 216093.0, porEjercer: 402321.41, avance: 65.06}
                 ]
             },
             {
                 clave: "0105020603",
-                nombre: "Adquisiciones y Servicios",
+                nombre: "Adquisiciones Y Servicios",
                 dependencia: "B00",
                 area: "402",
-                presupuestoAnual: 2435673.70,
-                ampliacion: 0.00,
-                reduccion: 14418.92,
-                presupuestoModificado: 2421254.78,
-                pagadoAcumulado: 630427.50,
-                porEjercer: 1790827.28,
-                variacionPorcentaje: 73.96,
+                presupuestoAnual: 0.0,
+                ampliacion: 14418.92,
+                reduccion: 0.0,
+                presupuestoModificado: 14418.92,
+                pagadoAcumulado: 14418.92,
+                porEjercer: 0.0,
+                variacionPorcentaje: 0.0,
                 partidas: [
-                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicio de energía eléctrica", partida: "3111", montoAnual: 2000000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 2000000.00, pagado: 600956.00, porEjercer: 1399044.00, avance: 30.05},
-                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicio de telefonía convencional", partida: "3141", montoAnual: 110000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 110000.00, pagado: 26112.50, porEjercer: 83887.50, avance: 23.74}
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "SERVICIOS FINANCIEROS, BANCARIOS Y COMERCIALES", partida: "3400", montoAnual: 0.0, ampliacion: 14418.92, reduccion: 0.0, modificado: 14418.92, pagado: 14418.92, porEjercer: 0.0, avance: 0.0},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Seguro de bienes patrimoniales", partida: "3450", montoAnual: 0.0, ampliacion: 14418.92, reduccion: 0.0, modificado: 14418.92, pagado: 14418.92, porEjercer: 0.0, avance: 0.0},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Seguros y fianzas", partida: "3451", montoAnual: 0.0, ampliacion: 14418.92, reduccion: 0.0, modificado: 14418.92, pagado: 14418.92, porEjercer: 0.0, avance: 0.0}
+                ]
+            },
+            {
+                clave: "0105020603",
+                nombre: "Adquisiciones Y Servicios",
+                dependencia: "B00",
+                area: "402",
+                presupuestoAnual: 2435673.7,
+                ampliacion: 20000.0,
+                reduccion: 27921.32,
+                presupuestoModificado: 2427752.38,
+                pagadoAcumulado: 1642039.02,
+                porEjercer: 785713.36,
+                variacionPorcentaje: 32.36,
+                partidas: [
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "SERVICIOS BASICOS", partida: "3100", montoAnual: 2110000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 2110000.0, pagado: 1628785.02, porEjercer: 481214.98, avance: 22.81},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Energía eléctrica", partida: "3110", montoAnual: 2000000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 2000000.0, pagado: 1576560.0, porEjercer: 423440.0, avance: 21.17},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicio de energía eléctrica", partida: "3111", montoAnual: 2000000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 2000000.0, pagado: 1576560.0, porEjercer: 423440.0, avance: 21.17},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Telefonía tradicional", partida: "3140", montoAnual: 110000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 110000.0, pagado: 52225.02, porEjercer: 57774.98, avance: 52.52},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicio de telefonía convencional", partida: "3141", montoAnual: 110000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 110000.0, pagado: 52225.02, porEjercer: 57774.98, avance: 52.52},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "SERVICIOS DE TRASLADO Y VIATICOS", partida: "3700", montoAnual: 0.0, ampliacion: 20000.0, reduccion: 0.0, modificado: 20000.0, pagado: 9895.0, porEjercer: 10105.0, avance: 50.52},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Pasajes terrestres", partida: "3720", montoAnual: 0.0, ampliacion: 20000.0, reduccion: 0.0, modificado: 20000.0, pagado: 9895.0, porEjercer: 10105.0, avance: 50.52},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Gastos de traslado por vía terrestre", partida: "3721", montoAnual: 0.0, ampliacion: 20000.0, reduccion: 0.0, modificado: 20000.0, pagado: 9895.0, porEjercer: 10105.0, avance: 50.52},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "OTROS SERVICIOS GENERALES", partida: "3900", montoAnual: 20000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 20000.0, pagado: 3359.0, porEjercer: 16641.0, avance: 83.2},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Penas, multas, accesorios y actualizaciones", partida: "3950", montoAnual: 20000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 20000.0, pagado: 3359.0, porEjercer: 16641.0, avance: 83.2},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Penas, multas, accesorios y actualizaciones", partida: "3951", montoAnual: 20000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 20000.0, pagado: 3359.0, porEjercer: 16641.0, avance: 83.2}
                 ]
             },
             {
                 clave: "0105020606",
-                nombre: "Control de Patrimonio",
+                nombre: "Control Del Patrimonio Y Normatividad",
                 dependencia: "B00",
                 area: "402",
-                presupuestoAnual: 130000.00,
-                ampliacion: 0.00,
-                reduccion: 0.00,
-                presupuestoModificado: 130000.00,
-                pagadoAcumulado: 23200.00,
-                porEjercer: 106800.00,
+                presupuestoAnual: 130000.0,
+                ampliacion: 0.0,
+                reduccion: 0.0,
+                presupuestoModificado: 130000.0,
+                pagadoAcumulado: 23200.0,
+                porEjercer: 106800.0,
                 variacionPorcentaje: 82.15,
                 partidas: [
-                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicios informáticos", partida: "3331", montoAnual: 100000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 100000.00, pagado: 23200.00, porEjercer: 76800.00, avance: 23.20}
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "SERVICIOS PROFESIONALES, CIENTIFICOS, TECNICOS Y OTROS SERVICIOS", partida: "3300", montoAnual: 100000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 100000.0, pagado: 23200.0, porEjercer: 76800.0, avance: 76.8},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicios de consultoría administrativa, procesos, técnica y en tecnologías de la información", partida: "3330", montoAnual: 100000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 100000.0, pagado: 23200.0, porEjercer: 76800.0, avance: 76.8},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicios informáticos", partida: "3331", montoAnual: 100000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 100000.0, pagado: 23200.0, porEjercer: 76800.0, avance: 76.8}
                 ]
             },
             {
                 clave: "0204010101",
-                nombre: "Cultura Física y Deporte",
+                nombre: "Promoción Y Fomento De La Cultura Física (Cultura Física)",
                 dependencia: "C00",
                 area: "403",
-                presupuestoAnual: 2495000.00,
-                ampliacion: 0.00,
-                reduccion: 0.00,
-                presupuestoModificado: 2495000.00,
-                pagadoAcumulado: 452586.80,
-                porEjercer: 2042413.20,
-                variacionPorcentaje: 81.86,
+                presupuestoAnual: 2495000.0,
+                ampliacion: 550000.0,
+                reduccion: 0.0,
+                presupuestoModificado: 3045000.0,
+                pagadoAcumulado: 1242814.79,
+                porEjercer: 1802185.21,
+                variacionPorcentaje: 59.19,
                 partidas: [
-                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicios bancarios y financieros", partida: "3411", montoAnual: 395000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 395000.00, pagado: 366391.80, porEjercer: 28608.20, avance: 92.76},
-                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Reparación, instalación y mantenimiento de maquinaria, equipo industrial y diverso", partida: "3571", montoAnual: 1200000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 1200000.00, pagado: 39440.00, porEjercer: 1160560.00, avance: 3.29},
-                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Gastos de ceremonias oficiales y de orden social", partida: "3821", montoAnual: 150000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 150000.00, pagado: 315.00, porEjercer: 149685.00, avance: 0.21}
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "SERVICIOS BASICOS", partida: "3100", montoAnual: 150000.0, ampliacion: 50000.0, reduccion: 0.0, modificado: 200000.0, pagado: 169305.25, porEjercer: 30694.75, avance: 15.35},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Gas", partida: "3120", montoAnual: 150000.0, ampliacion: 50000.0, reduccion: 0.0, modificado: 200000.0, pagado: 169305.25, porEjercer: 30694.75, avance: 15.35},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Gas", partida: "3121", montoAnual: 150000.0, ampliacion: 50000.0, reduccion: 0.0, modificado: 200000.0, pagado: 169305.25, porEjercer: 30694.75, avance: 15.35},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "SERVICIOS FINANCIEROS, BANCARIOS Y COMERCIALES", partida: "3400", montoAnual: 395000.0, ampliacion: 500000.0, reduccion: 0.0, modificado: 895000.0, pagado: 730434.6, porEjercer: 164565.4, avance: 18.39},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicios financieros y bancarios", partida: "3410", montoAnual: 395000.0, ampliacion: 500000.0, reduccion: 0.0, modificado: 895000.0, pagado: 730434.6, porEjercer: 164565.4, avance: 18.39},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicios bancarios y financieros", partida: "3411", montoAnual: 395000.0, ampliacion: 500000.0, reduccion: 0.0, modificado: 895000.0, pagado: 730434.6, porEjercer: 164565.4, avance: 18.39},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "SERVICIOS DE INSTALACION, REPARACION, MANTENIMIENTO Y CONSERVACION", partida: "3500", montoAnual: 1200000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 1200000.0, pagado: 341504.0, porEjercer: 858496.0, avance: 71.54},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Instalación, reparación y mantenimiento de maquinaria, otros equipos y herramienta", partida: "3570", montoAnual: 1200000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 1200000.0, pagado: 341504.0, porEjercer: 858496.0, avance: 71.54},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Reparación, instalación y mantenimiento de maquinaria, equipo industrial y diverso", partida: "3571", montoAnual: 1200000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 1200000.0, pagado: 341504.0, porEjercer: 858496.0, avance: 71.54},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "SERVICIOS OFICIALES", partida: "3800", montoAnual: 650000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 650000.0, pagado: 1570.94, porEjercer: 648429.06, avance: 99.76},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Gastos de orden social y cultural", partida: "3820", montoAnual: 650000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 650000.0, pagado: 1570.94, porEjercer: 648429.06, avance: 99.76},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Gastos de ceremonias oficiales y de orden social", partida: "3821", montoAnual: 150000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 150000.0, pagado: 593.4, porEjercer: 149406.6, avance: 99.6},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Espectáculos cívicos y culturales", partida: "3822", montoAnual: 500000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 500000.0, pagado: 977.54, porEjercer: 499022.46, avance: 99.8}
                 ]
             },
             {
                 clave: "0204010102",
-                nombre: "Infraestructura Deportiva",
+                nombre: "Fomento De Las Actividades Deportivas Recreativas (Deporte Competitivo)",
                 dependencia: "C00",
                 area: "405",
-                presupuestoAnual: 690000.00,
-                ampliacion: 0.00,
-                reduccion: 0.00,
-                presupuestoModificado: 690000.00,
-                pagadoAcumulado: 317307.41,
-                porEjercer: 372692.59,
-                variacionPorcentaje: 54.01,
+                presupuestoAnual: 690000.0,
+                ampliacion: 0.0,
+                reduccion: 0.0,
+                presupuestoModificado: 690000.0,
+                pagadoAcumulado: 475714.07,
+                porEjercer: 214285.93,
+                variacionPorcentaje: 31.06,
                 partidas: [
-                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicio de agua", partida: "3131", montoAnual: 90000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 90000.00, pagado: 52566.41, porEjercer: 37433.59, avance: 58.41},
-                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Reparación y mantenimiento menor de inmuebles", partida: "3511", montoAnual: 600000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 600000.00, pagado: 264741.00, porEjercer: 335259.00, avance: 44.12}
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "SERVICIOS BASICOS", partida: "3100", montoAnual: 90000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 90000.0, pagado: 72278.83, porEjercer: 17721.17, avance: 19.69},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Agua", partida: "3130", montoAnual: 90000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 90000.0, pagado: 72278.83, porEjercer: 17721.17, avance: 19.69},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Servicio de agua", partida: "3131", montoAnual: 90000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 90000.0, pagado: 72278.83, porEjercer: 17721.17, avance: 19.69},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "SERVICIOS DE INSTALACION, REPARACION, MANTENIMIENTO Y CONSERVACION", partida: "3500", montoAnual: 600000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 600000.0, pagado: 403435.24, porEjercer: 196564.76, avance: 32.76},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Conservación y mantenimiento menor de inmuebles", partida: "3510", montoAnual: 600000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 600000.0, pagado: 403435.24, porEjercer: 196564.76, avance: 32.76},
+                    {capitulo: "3000", nombre: "SERVICIOS GENERALES", concepto: "Reparación y mantenimiento menor de inmuebles", partida: "3511", montoAnual: 600000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 600000.0, pagado: 403435.24, porEjercer: 196564.76, avance: 32.76}
                 ]
-            }
+            },
         ];
 
         // ==============================================

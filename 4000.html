@@ -86,7 +86,7 @@
     <main class="container mx-auto px-6 py-8" id="contenidoReporte">
         <div class="text-center mb-8 pb-4 border-b-2 border-imcu/20">
             <h2 class="text-[20px] font-bold texto-oficial text-imcu">CONCENTRADO DE GASTO - CAPÍTULO 4000 - AVANCE PRESUPUESTAL</h2>
-            <p class="text-[15px] text-gray-600">Del 1 de Enero al 31 de Marzo de 2026</p>
+            <p class="text-[15px] text-gray-600">Del 1 de Enero al 30 de Junio de 2026</p>
         </div>
 
         <div class="bg-white rounded-lg shadow-sm p-5 mb-6 border-l-4 border-imcu">
@@ -161,25 +161,45 @@
 
     <script>
         // ===================== DATOS COMPLETOS - CAPÍTULO 4000 =====================
-        const proyectosGasto = [
+                const proyectosGasto = [
             {
                 clave: "0204010101",
-                nombre: "Cultura Física y Deporte",
+                nombre: "Promoción Y Fomento De La Cultura Física (Cultura Física)",
                 dependencia: "C00",
                 area: "403",
-                presupuestoAnual: 29616000.00,
-                ampliacion: 0.00,
-                reduccion: 0.00,
-                presupuestoModificado: 29616000.00,
-                pagadoAcumulado: 7019000.00,
-                porEjercer: 22597000.00,
-                variacionPorcentaje: 76.30,
+                presupuestoAnual: 29616000.0,
+                ampliacion: 0.0,
+                reduccion: 0.0,
+                presupuestoModificado: 29616000.0,
+                pagadoAcumulado: 13993000.0,
+                porEjercer: 15623000.0,
+                variacionPorcentaje: 52.75,
                 partidas: [
-                    {capitulo: "4000", nombre: "TRANSFERENCIAS, ASIGNACIONES, SUBSIDIOS Y OTRAS AYUDAS", concepto: "AYUDAS SOCIALES", partida: "4400", montoAnual: 29616000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 29616000.00, pagado: 7019000.00, porEjercer: 22597000.00, avance: 23.70},
-                    {capitulo: "4000", nombre: "TRANSFERENCIAS, ASIGNACIONES, SUBSIDIOS Y OTRAS AYUDAS", concepto: "Becas y otras ayudas para programas de capacitación", partida: "4420", montoAnual: 29616000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 29616000.00, pagado: 7019000.00, porEjercer: 22597000.00, avance: 23.70},
-                    {capitulo: "4000", nombre: "TRANSFERENCIAS, ASIGNACIONES, SUBSIDIOS Y OTRAS AYUDAS", concepto: "Premios, estímulos, recompensas, becas y seguros a deportistas", partida: "4423", montoAnual: 29616000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 29616000.00, pagado: 7019000.00, porEjercer: 22597000.00, avance: 23.70}
+                    {capitulo: "4000", nombre: "TRANSFERENCIAS, ASIGNACIONES, SUBSIDIOS Y OTRAS AYUDAS", concepto: "AYUDAS SOCIALES", partida: "4400", montoAnual: 29616000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 29616000.0, pagado: 13993000.0, porEjercer: 15623000.0, avance: 52.75},
+                    {capitulo: "4000", nombre: "TRANSFERENCIAS, ASIGNACIONES, SUBSIDIOS Y OTRAS AYUDAS", concepto: "Becas y otras ayudas para programas de capacitación", partida: "4420", montoAnual: 29616000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 29616000.0, pagado: 13993000.0, porEjercer: 15623000.0, avance: 52.75},
+                    {capitulo: "4000", nombre: "TRANSFERENCIAS, ASIGNACIONES, SUBSIDIOS Y OTRAS AYUDAS", concepto: "Premios, estímulos, recompensas, becas y seguros a deportistas", partida: "4423", montoAnual: 29616000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 29616000.0, pagado: 13993000.0, porEjercer: 15623000.0, avance: 52.75}
                 ]
-            }
+            },
+            {
+                clave: "0204010101",
+                nombre: "Promoción Y Fomento De La Cultura Física (Cultura Física)",
+                dependencia: "C00",
+                area: "403",
+                presupuestoAnual: 1100000.0,
+                ampliacion: 0.0,
+                reduccion: 173819.15,
+                presupuestoModificado: 926180.85,
+                pagadoAcumulado: 56627.0,
+                porEjercer: 869553.85,
+                variacionPorcentaje: 93.89,
+                partidas: [
+                    {capitulo: "4000", nombre: "TRANSFERENCIAS, ASIGNACIONES, SUBSIDIOS Y OTRAS AYUDAS", concepto: "AYUDAS SOCIALES", partida: "4400", montoAnual: 1100000.0, ampliacion: 0.0, reduccion: 173819.15, modificado: 926180.85, pagado: 56627.0, porEjercer: 869553.85, avance: 93.89},
+                    {capitulo: "4000", nombre: "TRANSFERENCIAS, ASIGNACIONES, SUBSIDIOS Y OTRAS AYUDAS", concepto: "Ayudas sociales a personas", partida: "4410", montoAnual: 900000.0, ampliacion: 0.0, reduccion: 173819.15, modificado: 726180.85, pagado: 1227.0, porEjercer: 724953.85, avance: 99.83},
+                    {capitulo: "4000", nombre: "TRANSFERENCIAS, ASIGNACIONES, SUBSIDIOS Y OTRAS AYUDAS", concepto: "Gastos relacionados con actividades culturales, deportivas y de ayuda extraordinaria", partida: "4413", montoAnual: 900000.0, ampliacion: 0.0, reduccion: 173819.15, modificado: 726180.85, pagado: 1227.0, porEjercer: 724953.85, avance: 99.83},
+                    {capitulo: "4000", nombre: "TRANSFERENCIAS, ASIGNACIONES, SUBSIDIOS Y OTRAS AYUDAS", concepto: "Becas y otras ayudas para programas de capacitación", partida: "4420", montoAnual: 200000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 200000.0, pagado: 55400.0, porEjercer: 144600.0, avance: 72.3},
+                    {capitulo: "4000", nombre: "TRANSFERENCIAS, ASIGNACIONES, SUBSIDIOS Y OTRAS AYUDAS", concepto: "Premios, estímulos, recompensas, becas y seguros a deportistas", partida: "4423", montoAnual: 200000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 200000.0, pagado: 55400.0, porEjercer: 144600.0, avance: 72.3}
+                ]
+            },
         ];
 
         // ==============================================

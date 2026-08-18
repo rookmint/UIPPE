@@ -86,7 +86,7 @@
     <main class="container mx-auto px-6 py-8" id="contenidoReporte">
         <div class="text-center mb-8 pb-4 border-b-2 border-imcu/20">
             <h2 class="text-[20px] font-bold texto-oficial text-imcu">CONCENTRADO DE GASTO - CAPÍTULO 2000 - AVANCE PRESUPUESTAL</h2>
-            <p class="text-[15px] text-gray-600">Del 1 de Enero al 31 de Marzo de 2026</p>
+            <p class="text-[15px] text-gray-600">Del 1 de Enero al 30 de Junio de 2026</p>
         </div>
 
         <div class="bg-white rounded-lg shadow-sm p-5 mb-6 border-l-4 border-imcu">
@@ -161,179 +161,139 @@
 
     <script>
         // ===================== DATOS COMPLETOS - CAPÍTULO 2000 (TODOS INCLUIDOS) =====================
-        const proyectosGasto = [
+                const proyectosGasto = [
             {
-                clave: "0103050104",
-                nombre: "Asistencia Jurídica",
+                clave: "0105020608",
+                nombre: "Simplificación Y Modernización De La Administración Pública",
                 dependencia: "A00",
                 area: "401",
-                presupuestoAnual: 20000.00,
-                ampliacion: 0.00,
-                reduccion: 0.00,
-                presupuestoModificado: 20000.00,
-                pagadoAcumulado: 2893.00,
-                porEjercer: 17107.00,
-                variacionPorcentaje: 85.54,
+                presupuestoAnual: 20000.0,
+                ampliacion: 0.0,
+                reduccion: 0.0,
+                presupuestoModificado: 20000.0,
+                pagadoAcumulado: 7814.0,
+                porEjercer: 12186.0,
+                variacionPorcentaje: 60.93,
                 partidas: [
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Productos alimenticios para personas", partida: "2211", montoAnual: 20000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 20000.00, pagado: 2893.00, porEjercer: 17107.00, avance: 14.46}
-                ]
-            },
-            {
-                clave: "0105020609",
-                nombre: "Operación y Seguimiento",
-                dependencia: "A00",
-                area: "401",
-                presupuestoAnual: 3000.00,
-                ampliacion: 0.00,
-                reduccion: 0.00,
-                presupuestoModificado: 3000.00,
-                pagadoAcumulado: 0.00,
-                porEjercer: 3000.00,
-                variacionPorcentaje: 100.00,
-                partidas: [
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales y útiles de oficina", partida: "2111", montoAnual: 3000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 3000.00, pagado: 0.00, porEjercer: 3000.00, avance: 0.00}
-                ]
-            },
-            {
-                clave: "0108030103",
-                nombre: "Comunicación Pública",
-                dependencia: "A00",
-                area: "401",
-                presupuestoAnual: 3000.00,
-                ampliacion: 0.00,
-                reduccion: 0.00,
-                presupuestoModificado: 3000.00,
-                pagadoAcumulado: 0.00,
-                porEjercer: 3000.00,
-                variacionPorcentaje: 100.00,
-                partidas: [
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales y útiles de oficina", partida: "2111", montoAnual: 3000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 3000.00, pagado: 0.00, porEjercer: 3000.00, avance: 0.00}
-                ]
-            },
-            // ✅ FUNCIÓN PÚBLICA
-            {
-                clave: "0103040101",
-                nombre: "Función Pública",
-                dependencia: "A00",
-                area: "401",
-                presupuestoAnual: 15000.00,
-                ampliacion: 0.00,
-                reduccion: 0.00,
-                presupuestoModificado: 15000.00,
-                pagadoAcumulado: 2145.00,
-                porEjercer: 12855.00,
-                variacionPorcentaje: 85.70,
-                partidas: [
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales y útiles de oficina", partida: "2111", montoAnual: 10000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 10000.00, pagado: 1430.00, porEjercer: 8570.00, avance: 14.30},
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Material de limpieza", partida: "2161", montoAnual: 5000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 5000.00, pagado: 715.00, porEjercer: 4285.00, avance: 14.30}
-                ]
-            },
-            // ✅ SISTEMA ANTICORRUPCIÓN
-            {
-                clave: "0103040201",
-                nombre: "Sistema Anticorrupción",
-                dependencia: "A00",
-                area: "401",
-                presupuestoAnual: 25000.00,
-                ampliacion: 0.00,
-                reduccion: 0.00,
-                presupuestoModificado: 25000.00,
-                pagadoAcumulado: 3575.00,
-                porEjercer: 21425.00,
-                variacionPorcentaje: 85.70,
-                partidas: [
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales y útiles de oficina", partida: "2111", montoAnual: 15000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 15000.00, pagado: 2145.00, porEjercer: 12855.00, avance: 14.30},
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Productos alimenticios para personas", partida: "2211", montoAnual: 10000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 10000.00, pagado: 1430.00, porEjercer: 8570.00, avance: 14.30}
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "ALIMENTOS Y UTENSILIOS", partida: "2200", montoAnual: 20000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 20000.0, pagado: 7814.0, porEjercer: 12186.0, avance: 60.93},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Productos alimenticios para personas", partida: "2210", montoAnual: 20000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 20000.0, pagado: 7814.0, porEjercer: 12186.0, avance: 60.93},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Productos alimenticios para personas", partida: "2211", montoAnual: 20000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 20000.0, pagado: 7814.0, porEjercer: 12186.0, avance: 60.93}
                 ]
             },
             {
                 clave: "0105020603",
-                nombre: "Adquisiciones y Servicios",
+                nombre: "Adquisiciones Y Servicios",
                 dependencia: "B00",
                 area: "402",
                 presupuestoAnual: 381119.34,
-                ampliacion: 4280.00,
-                reduccion: 4280.00,
-                presupuestoModificado: 381119.34,
-                pagadoAcumulado: 157573.51,
-                porEjercer: 223545.83,
-                variacionPorcentaje: 58.66,
+                ampliacion: 17782.4,
+                reduccion: 4280.0,
+                presupuestoModificado: 394621.74,
+                pagadoAcumulado: 317321.63,
+                porEjercer: 77300.11,
+                variacionPorcentaje: 19.59,
                 partidas: [
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales y útiles de oficina", partida: "2111", montoAnual: 31119.34, ampliacion: 0.00, reduccion: 0.00, modificado: 31119.34, pagado: 1328.40, porEjercer: 29790.94, avance: 4.27},
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Material y enseres de limpieza", partida: "2161", montoAnual: 180000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 180000.00, pagado: 654.01, porEjercer: 179345.99, avance: 0.36},
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Refacciones y accesorios para equipo de computo", partida: "2941", montoAnual: 20000.00, ampliacion: 0.00, reduccion: 4280.00, modificado: 15720.00, pagado: 1311.10, porEjercer: 14408.90, avance: 8.34}
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "MATERIALES DE ADMINISTRACION, EMISION DE DOCUMENTOS Y ARTICULOS OFICIALES", partida: "2100", montoAnual: 211119.34, ampliacion: 0.0, reduccion: 0.0, modificado: 211119.34, pagado: 146989.13, porEjercer: 64130.21, avance: 30.38},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales, útiles y equipos menores de oficina", partida: "2110", montoAnual: 31119.34, ampliacion: 0.0, reduccion: 0.0, modificado: 31119.34, pagado: 9310.41, porEjercer: 21808.93, avance: 70.08},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales y útiles de oficina", partida: "2111", montoAnual: 31119.34, ampliacion: 0.0, reduccion: 0.0, modificado: 31119.34, pagado: 9310.41, porEjercer: 21808.93, avance: 70.08},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Material de limpieza", partida: "2160", montoAnual: 180000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 180000.0, pagado: 137678.72, porEjercer: 42321.28, avance: 23.51},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Material y enseres de limpieza", partida: "2161", montoAnual: 180000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 180000.0, pagado: 137678.72, porEjercer: 42321.28, avance: 23.51},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "VESTUARIO, BLANCOS, PRENDAS DE PROTECCION Y ARTICULOS DEPORTIVOS", partida: "2700", montoAnual: 150000.0, ampliacion: 17782.4, reduccion: 0.0, modificado: 167782.4, pagado: 167782.4, porEjercer: 0.0, avance: 0.0},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Vestuario y uniformes", partida: "2710", montoAnual: 150000.0, ampliacion: 17782.4, reduccion: 0.0, modificado: 167782.4, pagado: 167782.4, porEjercer: 0.0, avance: 0.0},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Vestuario y uniformes", partida: "2711", montoAnual: 150000.0, ampliacion: 17782.4, reduccion: 0.0, modificado: 167782.4, pagado: 167782.4, porEjercer: 0.0, avance: 0.0},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "HERRAMIENTAS, REFACCIONES Y ACCESORIOS MENORES", partida: "2900", montoAnual: 20000.0, ampliacion: 0.0, reduccion: 4280.0, modificado: 15720.0, pagado: 2550.1, porEjercer: 13169.9, avance: 83.78},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Refacciones y accesorios menores de equipo de cómputo y tecnologías de la información", partida: "2940", montoAnual: 20000.0, ampliacion: 0.0, reduccion: 4280.0, modificado: 15720.0, pagado: 2550.1, porEjercer: 13169.9, avance: 83.78},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Refacciones y accesorios para equipo de computo", partida: "2941", montoAnual: 20000.0, ampliacion: 0.0, reduccion: 4280.0, modificado: 15720.0, pagado: 2550.1, porEjercer: 13169.9, avance: 83.78}
                 ]
             },
             {
                 clave: "0108050103",
-                nombre: "Modernización Administrativa",
+                nombre: "Innovación Gubernamental Con Tecnologías De Información",
                 dependencia: "B00",
                 area: "402",
-                presupuestoAnual: 126000.00,
-                ampliacion: 0.00,
-                reduccion: 0.00,
-                presupuestoModificado: 126000.00,
-                pagadoAcumulado: 3237.20,
-                porEjercer: 122762.80,
-                variacionPorcentaje: 97.43,
+                presupuestoAnual: 126000.0,
+                ampliacion: 0.0,
+                reduccion: 0.0,
+                presupuestoModificado: 126000.0,
+                pagadoAcumulado: 6914.5,
+                porEjercer: 119085.5,
+                variacionPorcentaje: 94.51,
                 partidas: [
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales y útiles de oficina", partida: "2111", montoAnual: 6000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 6000.00, pagado: 1359.20, porEjercer: 4640.80, avance: 22.65},
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Material de limpieza", partida: "2161", montoAnual: 120000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 120000.00, pagado: 1878.00, porEjercer: 118122.00, avance: 1.56}
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "MATERIALES DE ADMINISTRACION, EMISION DE DOCUMENTOS Y ARTICULOS OFICIALES", partida: "2100", montoAnual: 126000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 126000.0, pagado: 6914.5, porEjercer: 119085.5, avance: 94.51},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales, útiles y equipos menores de oficina", partida: "2110", montoAnual: 6000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 6000.0, pagado: 1359.2, porEjercer: 4640.8, avance: 77.35},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales y útiles de oficina", partida: "2111", montoAnual: 6000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 6000.0, pagado: 1359.2, porEjercer: 4640.8, avance: 77.35},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales útiles y equipos menores de tecnologías de la información y comunicaciones", partida: "2140", montoAnual: 120000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 120000.0, pagado: 5555.3, porEjercer: 114444.7, avance: 95.37},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales y útiles para el procesamiento en equipos y bienes informáticos", partida: "2141", montoAnual: 120000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 120000.0, pagado: 5555.3, porEjercer: 114444.7, avance: 95.37}
                 ]
             },
             {
                 clave: "0204010101",
-                nombre: "Cultura Física y Deporte",
+                nombre: "Promoción Y Fomento De La Cultura Física (Cultura Física)",
                 dependencia: "C00",
                 area: "403",
-                presupuestoAnual: 142600.00,
-                ampliacion: 0.00,
-                reduccion: 0.00,
-                presupuestoModificado: 142600.00,
-                pagadoAcumulado: 20550.00,
-                porEjercer: 122050.00,
-                variacionPorcentaje: 85.59,
+                presupuestoAnual: 1870000.0,
+                ampliacion: 173819.15,
+                reduccion: 50000.0,
+                presupuestoModificado: 1993819.15,
+                pagadoAcumulado: 715165.65,
+                porEjercer: 1278653.5,
+                variacionPorcentaje: 64.13,
                 partidas: [
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales y útiles de oficina", partida: "2111", montoAnual: 25000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 25000.00, pagado: 3600.00, porEjercer: 21400.00, avance: 14.40},
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Material y enseres de limpieza", partida: "2161", montoAnual: 32600.00, ampliacion: 0.00, reduccion: 0.00, modificado: 32600.00, pagado: 4700.00, porEjercer: 27900.00, avance: 14.41},
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales y útiles para procesamiento en informática", partida: "2141", montoAnual: 28000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 28000.00, pagado: 4050.00, porEjercer: 23950.00, avance: 14.46},
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Artículos deportivos", partida: "2731", montoAnual: 57000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 57000.00, pagado: 8200.00, porEjercer: 48800.00, avance: 14.38}
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "PRODUCTOS QUIMICOS, FARMACEUTICOS Y DE LABORATORIO", partida: "2500", montoAnual: 1430000.0, ampliacion: 173819.15, reduccion: 50000.0, modificado: 1553819.15, pagado: 356859.95, porEjercer: 1196959.2, avance: 77.03},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Productos químicos básicos", partida: "2510", montoAnual: 1300000.0, ampliacion: 0.0, reduccion: 50000.0, modificado: 1250000.0, pagado: 68398.7, porEjercer: 1181601.3, avance: 94.53},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Sustancias químicas", partida: "2511", montoAnual: 1300000.0, ampliacion: 0.0, reduccion: 50000.0, modificado: 1250000.0, pagado: 68398.7, porEjercer: 1181601.3, avance: 94.53},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Medicinas y productos farmacéuticos", partida: "2530", montoAnual: 30000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 30000.0, pagado: 14642.1, porEjercer: 15357.9, avance: 51.19},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Medicinas y productos farmacéuticos", partida: "2531", montoAnual: 30000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 30000.0, pagado: 14642.1, porEjercer: 15357.9, avance: 51.19},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales, accesorios y suministros médicos", partida: "2540", montoAnual: 100000.0, ampliacion: 173819.15, reduccion: 0.0, modificado: 273819.15, pagado: 273819.15, porEjercer: 0.0, avance: 0.0},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales, accesorios y suministros médicos", partida: "2541", montoAnual: 100000.0, ampliacion: 173819.15, reduccion: 0.0, modificado: 273819.15, pagado: 273819.15, porEjercer: 0.0, avance: 0.0},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "VESTUARIO, BLANCOS, PRENDAS DE PROTECCION Y ARTICULOS DEPORTIVOS", partida: "2700", montoAnual: 300000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 300000.0, pagado: 260805.69, porEjercer: 39194.31, avance: 13.06},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Artículos deportivos", partida: "2730", montoAnual: 300000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 300000.0, pagado: 260805.69, porEjercer: 39194.31, avance: 13.06},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Artículos deportivos", partida: "2731", montoAnual: 300000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 300000.0, pagado: 260805.69, porEjercer: 39194.31, avance: 13.06},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "HERRAMIENTAS, REFACCIONES Y ACCESORIOS MENORES", partida: "2900", montoAnual: 120000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 120000.0, pagado: 97500.01, porEjercer: 22499.99, avance: 18.75},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Refacciones y accesorios menores de mobiliario y equipo de administración, educacional y recreativo", partida: "2930", montoAnual: 120000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 120000.0, pagado: 97500.01, porEjercer: 22499.99, avance: 18.75},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Refacciones y accesorios menores de mobiliario y equipo de administración, educacional y recreativo", partida: "2931", montoAnual: 120000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 120000.0, pagado: 97500.01, porEjercer: 22499.99, avance: 18.75}
                 ]
             },
             {
                 clave: "0204010102",
-                nombre: "Fomento de Actividades Deportivas",
-                dependencia: "C00",
-                area: "404",
-                presupuestoAnual: 3000.00,
-                ampliacion: 0.00,
-                reduccion: 0.00,
-                presupuestoModificado: 3000.00,
-                pagadoAcumulado: 0.00,
-                porEjercer: 3000.00,
-                variacionPorcentaje: 100.00,
-                partidas: [
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales y útiles de oficina", partida: "2111", montoAnual: 3000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 3000.00, pagado: 0.00, porEjercer: 3000.00, avance: 0.00}
-                ]
-            },
-            {
-                clave: "0204010102",
-                nombre: "Infraestructura Deportiva",
+                nombre: "Fomento De Las Actividades Deportivas Recreativas (Deporte Competitivo)",
                 dependencia: "C00",
                 area: "405",
                 presupuestoAnual: 3907337.77,
-                ampliacion: 517400.00,
-                reduccion: 0.00,
-                presupuestoModificado: 4424737.77,
-                pagadoAcumulado: 904563.17,
-                porEjercer: 3520174.60,
-                variacionPorcentaje: 79.56,
+                ampliacion: 647604.0,
+                reduccion: 50264.0,
+                presupuestoModificado: 4504677.77,
+                pagadoAcumulado: 2273297.41,
+                porEjercer: 2231380.36,
+                variacionPorcentaje: 49.53,
                 partidas: [
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales pétreos y de construcción", partida: "2411", montoAnual: 2887337.77, ampliacion: 0.00, reduccion: 0.00, modificado: 2887337.77, pagado: 353227.20, porEjercer: 2534110.57, avance: 12.23},
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Otros materiales de construcción y reparación", partida: "2491", montoAnual: 980000.00, ampliacion: 517400.00, reduccion: 0.00, modificado: 1497400.00, pagado: 545585.97, porEjercer: 951814.03, avance: 36.43},
-                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Sustancias químicas", partida: "2511", montoAnual: 40000.00, ampliacion: 0.00, reduccion: 0.00, modificado: 40000.00, pagado: 5750.00, porEjercer: 34250.00, avance: 14.37}
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "MATERIALES Y ARTICULOS DE CONSTRUCCION Y DE REPARACION", partida: "2400", montoAnual: 2887337.77, ampliacion: 0.0, reduccion: 0.0, modificado: 2887337.77, pagado: 1434590.58, porEjercer: 1452747.19, avance: 50.31},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Material eléctrico y electrónico", partida: "2460", montoAnual: 170000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 170000.0, pagado: 118689.18, porEjercer: 51310.82, avance: 30.18},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Material eléctrico y electrónico", partida: "2461", montoAnual: 170000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 170000.0, pagado: 118689.18, porEjercer: 51310.82, avance: 30.18},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales complementarios", partida: "2480", montoAnual: 200000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 200000.0, pagado: 9093.04, porEjercer: 190906.96, avance: 95.45},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales complementarios", partida: "2481", montoAnual: 200000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 200000.0, pagado: 9093.04, porEjercer: 190906.96, avance: 95.45},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Otros materiales y artículos de construcción y reparación", partida: "2490", montoAnual: 2517337.77, ampliacion: 0.0, reduccion: 0.0, modificado: 2517337.77, pagado: 1306808.36, porEjercer: 1210529.41, avance: 48.09},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Materiales de construcción", partida: "2491", montoAnual: 1515911.89, ampliacion: 0.0, reduccion: 0.0, modificado: 1515911.89, pagado: 1117181.42, porEjercer: 398730.47, avance: 26.3},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Estructuras y manufacturas para todo tipo de construcción", partida: "2492", montoAnual: 1001425.88, ampliacion: 0.0, reduccion: 0.0, modificado: 1001425.88, pagado: 189626.94, porEjercer: 811798.94, avance: 81.06},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "COMBUSTIBLES, LUBRICANTES Y ADITIVOS", partida: "2600", montoAnual: 30000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 30000.0, pagado: 3392.0, porEjercer: 26608.0, avance: 88.69},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Combustibles, lubricantes y aditivos", partida: "2610", montoAnual: 30000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 30000.0, pagado: 3392.0, porEjercer: 26608.0, avance: 88.69},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Combustibles, lubricantes y aditivos", partida: "2611", montoAnual: 30000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 30000.0, pagado: 3392.0, porEjercer: 26608.0, avance: 88.69},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "VESTUARIO, BLANCOS, PRENDAS DE PROTECCION Y ARTICULOS DEPORTIVOS", partida: "2700", montoAnual: 50000.0, ampliacion: 617400.0, reduccion: 0.0, modificado: 667400.0, pagado: 628360.87, porEjercer: 39039.13, avance: 5.85},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Prendas de seguridad y protección personal", partida: "2720", montoAnual: 50000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 50000.0, pagado: 27342.02, porEjercer: 22657.98, avance: 45.32},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Prendas de seguridad y protección personal", partida: "2721", montoAnual: 50000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 50000.0, pagado: 27342.02, porEjercer: 22657.98, avance: 45.32},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Artículos deportivos", partida: "2730", montoAnual: 0.0, ampliacion: 617400.0, reduccion: 0.0, modificado: 617400.0, pagado: 601018.85, porEjercer: 16381.15, avance: 2.65},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Artículos deportivos", partida: "2731", montoAnual: 0.0, ampliacion: 617400.0, reduccion: 0.0, modificado: 617400.0, pagado: 601018.85, porEjercer: 16381.15, avance: 2.65},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "HERRAMIENTAS, REFACCIONES Y ACCESORIOS MENORES", partida: "2900", montoAnual: 940000.0, ampliacion: 30204.0, reduccion: 50264.0, modificado: 919940.0, pagado: 206953.96, porEjercer: 712986.04, avance: 77.5},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Herramientas menores", partida: "2910", montoAnual: 360000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 360000.0, pagado: 157206.48, porEjercer: 202793.52, avance: 56.33},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Refacciones, accesorios y herramientas", partida: "2911", montoAnual: 360000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 360000.0, pagado: 157206.48, porEjercer: 202793.52, avance: 56.33},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Refacciones y accesorios menores de edificios", partida: "2920", montoAnual: 500000.0, ampliacion: 0.0, reduccion: 50264.0, modificado: 449736.0, pagado: 4735.49, porEjercer: 445000.51, avance: 98.95},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Refacciones y accesorios menores de edificios", partida: "2921", montoAnual: 500000.0, ampliacion: 0.0, reduccion: 50264.0, modificado: 449736.0, pagado: 4735.49, porEjercer: 445000.51, avance: 98.95},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Refacciones y accesorios menores de mobiliario y equipo de administración, educacional y recreativo", partida: "2930", montoAnual: 0.0, ampliacion: 30204.0, reduccion: 0.0, modificado: 30204.0, pagado: 22739.99, porEjercer: 7464.01, avance: 24.71},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Refacciones y accesorios menores de mobiliario y equipo de administración, educacional y recreativo", partida: "2931", montoAnual: 0.0, ampliacion: 30204.0, reduccion: 0.0, modificado: 30204.0, pagado: 22739.99, porEjercer: 7464.01, avance: 24.71},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Refacciones y accesorios menores otros bienes muebles", partida: "2990", montoAnual: 80000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 80000.0, pagado: 22272.0, porEjercer: 57728.0, avance: 72.16},
+                    {capitulo: "2000", nombre: "MATERIALES Y SUMINISTRO", concepto: "Otros enseres", partida: "2992", montoAnual: 80000.0, ampliacion: 0.0, reduccion: 0.0, modificado: 80000.0, pagado: 22272.0, porEjercer: 57728.0, avance: 72.16}
                 ]
-            }
+            },
         ];
 
         // ==============================================

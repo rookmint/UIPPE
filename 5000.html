@@ -86,7 +86,7 @@
     <main class="container mx-auto px-6 py-8" id="contenidoReporte">
         <div class="text-center mb-8 pb-4 border-b-2 border-imcu/20">
             <h2 class="text-[20px] font-bold texto-oficial text-imcu">CONCENTRADO DE GASTO - CAPÍTULO 5000 - AVANCE PRESUPUESTAL</h2>
-            <p class="text-[15px] text-gray-600">Del 1 de Enero al 31 de Marzo de 2026</p>
+            <p class="text-[15px] text-gray-600">Del 1 de Enero al 30 de Junio de 2026</p>
         </div>
 
         <div class="bg-white rounded-lg shadow-sm p-5 mb-6 border-l-4 border-imcu">
@@ -161,25 +161,28 @@
 
     <script>
         // ===================== DATOS COMPLETOS - CAPÍTULO 5000 =====================
-        const proyectosGasto = [
+                const proyectosGasto = [
             {
                 clave: "0204010102",
-                nombre: "Infraestructura Deportiva",
+                nombre: "Fomento De Las Actividades Deportivas Recreativas (Deporte Competitivo)",
                 dependencia: "C00",
                 area: "405",
-                presupuestoAnual: 1450000.00,
-                ampliacion: 0.00,
-                reduccion: 517400.00,
-                presupuestoModificado: 932600.00,
-                pagadoAcumulado: 102660.00,
-                porEjercer: 829940.00,
-                variacionPorcentaje: 88.99,
+                presupuestoAnual: 1450000.0,
+                ampliacion: 300000.0,
+                reduccion: 897340.0,
+                presupuestoModificado: 852660.0,
+                pagadoAcumulado: 532656.48,
+                porEjercer: 320003.52,
+                variacionPorcentaje: 37.53,
                 partidas: [
-                    {capitulo: "5000", nombre: "BIENES MUEBLES, INMUEBLES E INTANGIBLES", concepto: "MOBILIARIO Y EQUIPO EDUCACIONAL Y RECREATIVO", partida: "5200", montoAnual: 1000000.00, ampliacion: 0.00, reduccion: 517400.00, modificado: 482600.00, pagado: 102660.00, porEjercer: 379940.00, avance: 21.27},
-                    {capitulo: "5000", nombre: "BIENES MUEBLES, INMUEBLES E INTANGIBLES", concepto: "Otro mobiliario y equipo educacional y recreativo", partida: "5290", montoAnual: 1000000.00, ampliacion: 0.00, reduccion: 517400.00, modificado: 482600.00, pagado: 102660.00, porEjercer: 379940.00, avance: 21.27},
-                    {capitulo: "5000", nombre: "BIENES MUEBLES, INMUEBLES E INTANGIBLES", concepto: "Otro equipo educacional y recreativo", partida: "5291", montoAnual: 1000000.00, ampliacion: 0.00, reduccion: 517400.00, modificado: 482600.00, pagado: 102660.00, porEjercer: 379940.00, avance: 21.27}
+                    {capitulo: "5000", nombre: "BIENES MUEBLES, INMUEBLES E INTANGIBLES", concepto: "MOBILIARIO Y EQUIPO EDUCACIONAL Y RECREATIVO", partida: "5200", montoAnual: 1000000.0, ampliacion: 0.0, reduccion: 897340.0, modificado: 102660.0, pagado: 102660.0, porEjercer: 0.0, avance: 0.0},
+                    {capitulo: "5000", nombre: "BIENES MUEBLES, INMUEBLES E INTANGIBLES", concepto: "Otro mobiliario y equipo educacional y recreativo", partida: "5290", montoAnual: 1000000.0, ampliacion: 0.0, reduccion: 897340.0, modificado: 102660.0, pagado: 102660.0, porEjercer: 0.0, avance: 0.0},
+                    {capitulo: "5000", nombre: "BIENES MUEBLES, INMUEBLES E INTANGIBLES", concepto: "Otro equipo educacional y recreativo", partida: "5291", montoAnual: 1000000.0, ampliacion: 0.0, reduccion: 897340.0, modificado: 102660.0, pagado: 102660.0, porEjercer: 0.0, avance: 0.0},
+                    {capitulo: "5000", nombre: "BIENES MUEBLES, INMUEBLES E INTANGIBLES", concepto: "MAQUINARIA, OTROS EQUIPOS Y HERRAMIENTAS", partida: "5600", montoAnual: 450000.0, ampliacion: 300000.0, reduccion: 0.0, modificado: 750000.0, pagado: 429996.48, porEjercer: 320003.52, avance: 42.67},
+                    {capitulo: "5000", nombre: "BIENES MUEBLES, INMUEBLES E INTANGIBLES", concepto: "Herramientas y maquinas-herramienta", partida: "5670", montoAnual: 150000.0, ampliacion: 300000.0, reduccion: 0.0, modificado: 450000.0, pagado: 429996.48, porEjercer: 20003.52, avance: 4.45},
+                    {capitulo: "5000", nombre: "BIENES MUEBLES, INMUEBLES E INTANGIBLES", concepto: "Herramientas, maquina herramienta y equipo", partida: "5671", montoAnual: 150000.0, ampliacion: 300000.0, reduccion: 0.0, modificado: 450000.0, pagado: 429996.48, porEjercer: 20003.52, avance: 4.45}
                 ]
-            }
+            },
         ];
 
         // ==============================================
